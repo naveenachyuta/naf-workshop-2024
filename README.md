@@ -31,7 +31,7 @@ Deploy the monitoring stack using Docker Compose:
 docker compose -f docker-compose-sample.yaml up
 ```
 
-### 3. Port Configuration
+### 4. Port Configuration
 
 To access the various UIs, configure the following ports in VS Code's ports section:
 
