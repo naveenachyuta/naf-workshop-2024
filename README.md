@@ -9,13 +9,11 @@ Learn how to collect, store, and visualize network metrics using:
 - Prometheus: Time series database and monitoring system
 - Grafana: Visualization and analytics platform
 
-## Quick Start
+## Workshop Demo
 
-Click on "Create Codespaces on main" to launch a development environment
+### 1. Click on "Create Codespaces on main" to launch a development environment
 
-## Workshop Environment Setup
-
-### 1. Network Simulation Setup
+### 2. Network Simulation Setup
 
 We use ContainerLab to simulate the network environment.
 
@@ -24,7 +22,7 @@ We use ContainerLab to simulate the network environment.
 sudo containerlab deploy -t clab.yaml
 ```
 
-### 2. TPG Stack Deployment
+### 3. TPG Stack Deployment
 
 Deploy the monitoring stack using Docker Compose:
 
