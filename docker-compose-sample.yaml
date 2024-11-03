@@ -1,0 +1,51 @@
+# version: "3.0"
+
+services:
+  telegraf:
+    # default port: 9126
+    image: telegraf:latest
+    container_name: telegraf
+    hostname: telegraf
+    network_mode: host
+    volumes:
+      - ./telegraf/telegraf-sample.conf:/etc/telegraf/telegraf.conf
+      # - ./.env:/etc/default/telegraf
+    command: telegraf --config /etc/telegraf/telegraf.conf
+
+  prometheus:
+    # default port: 9090
+    image: prom/prometheus:latest
+    container_name: prometheus
+    hostname: prometheus
+    network_mode: host
+    command: --config.file=/etc/prometheus/prometheus.yaml
+    depends_on:
+      - telegraf
+    volumes:
+      - ./prometheus/prometheus-sample.yaml:/etc/prometheus/prometheus.yaml
+      - ./prometheus/rules-sample.yaml:/etc/prometheus/rules.yaml
+
+  # comment this out during startup
+  alertmanager:
+    # default port: 9093
+    image: prom/alertmanager:latest
+    container_name: alertmanager
+    hostname: alertmanager
+    network_mode: host
+    depends_on:
+      - prometheus
+    volumes:
+      - ./alert-manager/alertmanager-sample.yaml:/config/alertmanager.yaml
+    command: --config.file=/config/alertmanager.yaml --log.level=debug
+
+  grafana:
+    # default port: 3000
+    image: grafana/grafana:latest
+    container_name: grafana
+    hostname: grafana
+    network_mode: host
+    depends_on:
+      - prometheus
+    volumes:
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
+      - ./grafana/provisioning:/etc/grafana/provisioning/

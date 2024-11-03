@@ -1,0 +1,12 @@
+groups:
+- name: Interface
+  rules:
+  - alert: Interface Flapping
+    expr: increase(intf_stats_carrier_transitions[1m]) > 0
+    annotations:
+      title: "Flapping Interface in {{ $labels.source }}"
+      description: "{{ $labels.name }} of device {{ $labels.source }} has been flapping"
+    labels:
+      severity: "critical"
+      device: "{{ $labels.source }}"
+      interface: "{{ $labels.name }}"
