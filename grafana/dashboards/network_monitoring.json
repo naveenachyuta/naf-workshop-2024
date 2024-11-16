@@ -114,7 +114,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.3.0",
+      "pluginVersion": "11.3.0+security-01",
       "targets": [
         {
           "datasource": {
@@ -122,7 +122,7 @@
             "uid": "de0oyqaf0izggb"
           },
           "editorMode": "code",
-          "expr": "grpc_stats_access_rejected{source=\"$device\"}",
+          "expr": "grpc_stats_access_rejected{source=~\"$device\"}",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
@@ -212,7 +212,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.3.0",
+      "pluginVersion": "11.3.0+security-01",
       "targets": [
         {
           "datasource": {
@@ -220,7 +220,7 @@
             "uid": "de0oyqaf0izggb"
           },
           "editorMode": "code",
-          "expr": "grpc_stats_access_accepted{source=\"$device\"}",
+          "expr": "grpc_stats_access_accepted{source=~\"$device\"}",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
@@ -323,7 +323,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.3.0",
+      "pluginVersion": "11.3.0+security-01",
       "targets": [
         {
           "datasource": {
@@ -331,7 +331,7 @@
             "uid": "de0oyqaf0izggb"
           },
           "editorMode": "code",
-          "expr": "intf_stats_in_bps{source=\"$device\"}",
+          "expr": "intf_stats_in_bps{source=~\"$device\"}",
           "hide": false,
           "instant": false,
           "legendFormat": "__auto",
@@ -422,7 +422,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.3.0",
+      "pluginVersion": "11.3.0+security-01",
       "targets": [
         {
           "datasource": {
@@ -430,7 +430,7 @@
             "uid": "de0oyqaf0izggb"
           },
           "editorMode": "code",
-          "expr": "intf_stats_out_bps{source=\"$device\"}",
+          "expr": "intf_stats_out_bps{source=~\"$device\"}",
           "hide": false,
           "instant": false,
           "legendFormat": "__auto",
@@ -521,7 +521,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.3.0",
+      "pluginVersion": "11.3.0+security-01",
       "targets": [
         {
           "datasource": {
@@ -529,7 +529,7 @@
             "uid": "de0oyqaf0izggb"
           },
           "editorMode": "code",
-          "expr": "intf_stats_in_error_packets{source=\"$device\"}",
+          "expr": "intf_stats_in_error_packets{source=~\"$device\"}",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
@@ -619,7 +619,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.3.0",
+      "pluginVersion": "11.3.0+security-01",
       "targets": [
         {
           "datasource": {
@@ -627,7 +627,7 @@
             "uid": "de0oyqaf0izggb"
           },
           "editorMode": "code",
-          "expr": "intf_stats_out_error_packets{source=\"$device\"}",
+          "expr": "intf_stats_out_error_packets{source=~\"$device\"}",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
@@ -717,7 +717,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.3.0",
+      "pluginVersion": "11.3.0+security-01",
       "targets": [
         {
           "datasource": {
@@ -725,7 +725,7 @@
             "uid": "de0oyqaf0izggb"
           },
           "editorMode": "code",
-          "expr": "intf_stats_in_discarded_packets{source=\"$device\"}",
+          "expr": "intf_stats_in_discarded_packets{source=~\"$device\"}",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
@@ -815,7 +815,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.3.0",
+      "pluginVersion": "11.3.0+security-01",
       "targets": [
         {
           "datasource": {
@@ -823,7 +823,7 @@
             "uid": "de0oyqaf0izggb"
           },
           "editorMode": "code",
-          "expr": "intf_stats_out_discarded_packets{source=\"$device\"}",
+          "expr": "intf_stats_out_discarded_packets{source=~\"$device\"}",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
@@ -913,7 +913,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.3.0",
+      "pluginVersion": "11.3.0+security-01",
       "targets": [
         {
           "datasource": {
@@ -921,7 +921,7 @@
             "uid": "de0oyqaf0izggb"
           },
           "editorMode": "code",
-          "expr": "intf_stats_carrier_transitions{source=\"$device\"}",
+          "expr": "intf_stats_carrier_transitions{source=~\"$device\"}",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
@@ -994,7 +994,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.3.0",
+      "pluginVersion": "11.3.0+security-01",
       "targets": [
         {
           "datasource": {
@@ -1002,7 +1002,7 @@
             "uid": "de0oyqaf0izggb"
           },
           "editorMode": "code",
-          "expr": "bgp_stats_total_peers{source=\"$device\"}",
+          "expr": "bgp_stats_total_peers{source=~\"$device\"}",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
@@ -1092,7 +1092,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.3.0",
+      "pluginVersion": "11.3.0+security-01",
       "targets": [
         {
           "datasource": {
@@ -1100,7 +1100,7 @@
             "uid": "de0oyqaf0izggb"
           },
           "editorMode": "code",
-          "expr": "bgp_stats_total_peers{source=\"$device\"} - bgp_stats_up_peers{source=\"$device\"}",
+          "expr": "bgp_stats_total_peers{source=~\"$device\"} - bgp_stats_up_peers{source=~\"$device\"}",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
@@ -1203,7 +1203,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.3.0",
+      "pluginVersion": "11.3.0+security-01",
       "targets": [
         {
           "datasource": {
@@ -1211,7 +1211,7 @@
             "uid": "de0oyqaf0izggb"
           },
           "editorMode": "code",
-          "expr": "cpu_instant{source=\"$device\"}",
+          "expr": "cpu_instant{source=~\"$device\"}",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
@@ -1301,7 +1301,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.3.0",
+      "pluginVersion": "11.3.0+security-01",
       "targets": [
         {
           "datasource": {
@@ -1309,7 +1309,7 @@
             "uid": "de0oyqaf0izggb"
           },
           "editorMode": "code",
-          "expr": "memory_utilization{source=\"$device\"}",
+          "expr": "memory_utilization{source=~\"$device\"}",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
@@ -1364,6 +1364,6 @@
   "timezone": "browser",
   "title": "Network Device Monitoring",
   "uid": "fe0ozaq5kd4hse",
-  "version": 1,
+  "version": 2,
   "weekStart": ""
 }
