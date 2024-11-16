@@ -1,8 +1,8 @@
-name: st # short for streaming telemetry ;)
+name: workshop
 prefix: ""
 
 mgmt:
-  network: st
+  network: nt
   ipv4-subnet: 172.80.80.0/24
 
 topology:
