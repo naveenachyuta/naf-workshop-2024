@@ -2,6 +2,8 @@
 
 This repository contains the necessary files and instructions that will used for NAF (network automation forum) 2024 workshop on collecting metrics from network devices using the Telegraf, Prometheus, and Grafana (TPG) stack.
 
+Note: clab.yaml file and device configs were taken from one of the sr-labs repository https://github.com/srl-labs/srl-telemetry-lab
+
 ## Overview
 
 Learn how to collect, store, and visualize network metrics using:
