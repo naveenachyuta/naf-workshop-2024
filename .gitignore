@@ -1,0 +1,3 @@
+#Ignore the containerlab generated files
+clab-workshop/*
+.clab.yaml.bak
