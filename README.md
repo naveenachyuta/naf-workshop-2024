@@ -1,4 +1,4 @@
-#  Network Monitoring for Beginners: Getting Started with TPG stack Workshop
+# Network Monitoring for Beginners: Getting Started with TPG stack Workshop
 
 This repository contains the necessary files and instructions that will used for NAF (network automation forum) 2024 workshop on collecting metrics from network devices using the Telegraf, Prometheus, and Grafana (TPG) stack.
 
